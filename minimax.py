@@ -5,7 +5,7 @@ def minmax(n, turn):
         return -1 if turn else 1
 
     if turn:
-        return(max(minmax(n-1, False), minmax(n-2, False)))
+        return max(minmax(n-1, False), minmax(n-2, False))
 
     else:
         return min(minmax(n-1, True), minmax(n-2, True))
